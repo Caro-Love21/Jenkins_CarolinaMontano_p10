@@ -7,7 +7,7 @@ pipeline {
                 echo 'nos ubicamos en el momento clave'
                 }
             }
-         stage ("generaremos la carpeta para respaldar nuestra info) {
+         stage ("generaremos la carpeta para respaldar nuestra info") {
             steps {
                 powershell 'mkdir C:\\Users\\Academia\\Desktop\\Carolina_DevOps\\jenkins\\resp_p10'
                 echo 'llegamos en el preciso momento de la magia'
