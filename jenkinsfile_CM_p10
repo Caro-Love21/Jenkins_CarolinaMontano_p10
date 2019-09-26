@@ -9,13 +9,13 @@ pipeline {
             }
          stage ("generaremos la carpeta para respaldar nuestra info") {
             steps {
-                powershell 'mkdir C:\\Users\\Academia\\Desktop\\Carolina_DevOps\\jenkins\\resp_p10.\$((Get-Date).hour)$((Get-date).minute)$((Get-date).second)'
+                powershell 'mkdir C:\\Users\\Academia\\Desktop\\Carolina_DevOps\\jenkins\\resp_p10.\$((Get-Date).hour)$((Get-date).minute)'
                 echo 'llegamos en el preciso momento de la magia'
                 }
              }
           stage ("backup realizado") {
              steps {
-                 powershell 'xcopy C:\\Users\\Academia\\Desktop\\Carolina_DevOps\\jenkins\\prac10_backup C:\\Users\\Academia\\Desktop\\Carolina_DevOps\\jenkins\\resp_p10.\$((Get-Date).hour)$((Get-date).minute)$((Get-date).second)'
+                 powershell 'xcopy C:\\Users\\Academia\\Desktop\\Carolina_DevOps\\jenkins\\prac10_backup C:\\Users\\Academia\\Desktop\\Carolina_DevOps\\jenkins\\resp_p10.\$((Get-Date).hour)$((Get-date).minute)'
                  echo 'y se hizo el respaldooooo genteeeeeee'
                  }
              }
